@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 public class meth {
     public static void main(String args[]) {
 
@@ -9,6 +9,7 @@ public class meth {
         int num = scanner.nextInt();
         // double res = square(num);
         System.out.println(square(num));
+        scanner.close();
         
     }
     static void happy(String name){
