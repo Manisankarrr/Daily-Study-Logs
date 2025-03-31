@@ -2,4 +2,4 @@
 src/*.exe
 
 # Ignore Python cache files
-src/__pycache__/
+src/*__pycache__/
