@@ -1,5 +1,5 @@
 # Ignore all .exe files inside src/
-src/*.exe
+src/C/.exe
 
 # Ignore Python cache files
 src/*__pycache__/
