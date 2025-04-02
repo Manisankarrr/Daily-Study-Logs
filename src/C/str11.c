@@ -22,7 +22,7 @@ int main() {
             second = first;
             first = len;
         }
-        else if(len > second && len != first)
+        else if(len > second && len < first)
         {
             second = len;
         }
