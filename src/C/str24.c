@@ -1,3 +1,6 @@
+// this s my friend is => this my friend
+
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
