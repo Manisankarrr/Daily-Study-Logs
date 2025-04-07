@@ -1,3 +1,5 @@
+
+
 #include<stdio.h>
 #include<string.h>
 #include<ctype.h>
@@ -16,22 +18,11 @@ int main()
     if( found != NULL)
     {
         int index = found - s;
-        printf("Substring found at index: %d %d\n", index);
+        printf("Substring found at index: %d %s\n", index);
     }
     else
     {
-        printf("Substring not found\n");
-    }
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        printf("Substring not found\n");    
+    }  
     return 0;
 }

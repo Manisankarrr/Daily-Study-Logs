@@ -30,6 +30,7 @@ int main()
 
         token = strtok(NULL, " ");        
     }
+    res[strlen(res)-1] = '\0';
     printf("%s\n", res);
 
     return 0;
