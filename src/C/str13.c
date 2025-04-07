@@ -1,3 +1,4 @@
+//unique character
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -20,7 +21,7 @@ int main() {
                 }
             }
             if(count == 1) {
-                printf("%c",current); // Add unique character to reversed string
+                printf("%c",current); 
             }
             
         }
