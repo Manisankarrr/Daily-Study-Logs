@@ -12,9 +12,7 @@ int main()
     char *token = strtok(s," ");
     while(token != NULL)
     {
-        
-        char *word = strtok(NULL, "");
-        if(strcmp(token,word) != 0){ // Check if the word is the same as the token{
+        if(strstr(r,token) == NULL){ // Check if the word is the same as the token
             strcat(r,token); // Copy the word to r
             strcat(r," "); // Add a space after the word
         }
