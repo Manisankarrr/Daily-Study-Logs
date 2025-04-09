@@ -14,7 +14,6 @@ int main() {
         for (int j = i; j < n; j++) {
             int left = i, right = j;
             int isPalindrome = 1;
-
             while (left < right) {
                 if (s[left] != s[right]) {
                     isPalindrome = 0;
@@ -23,7 +22,6 @@ int main() {
                 left++;
                 right--;
             }
-
             if (isPalindrome && (j - i + 1 > maxLen)) {
                 maxLen = j - i + 1;
                 start = i;
@@ -31,7 +29,6 @@ int main() {
             }
         }
     }
-
     int k = 0;
     for (int i = start; i <= end; i++)
         longest[k++] = s[i];
