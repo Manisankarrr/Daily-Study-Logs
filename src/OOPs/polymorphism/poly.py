@@ -5,8 +5,7 @@
 #              1. Inheritance An object could be treated of the same type as a parent class
 #              2. "Duck typing" = Object must have necessary attributes/methods
 
-# Example of Inheritance
-
+# Example of Inheritance -
 from abc import ABC, abstractmethod
 
 class Shape:
