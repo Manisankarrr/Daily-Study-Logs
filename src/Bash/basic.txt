@@ -1,0 +1,40 @@
+manish@MANISH:~$ mkdir bsh
+manish@MANISH:~$ cd bsh
+manish@MANISH:~/bsh$ echo hello
+hello
+manish@MANISH:~/bsh$ vim t1.txt
+manish@MANISH:~/bsh$ cat vim
+cat: vim: No such file or directory
+manish@MANISH:~/bsh$ cat t1
+cat: t1: No such file or directory
+manish@MANISH:~/bsh$ cat t1.txt
+hello world
+manish@MANISH:~/bsh$ vim t1.sh
+manish@MANISH:~/bsh$ cat t1.sh
+echo hello world!
+manish@MANISH:~/bsh$ ls -ltr
+total 8
+-rw-r--r-- 1 manish manish 12 Apr 25 05:21 t1.txt
+-rw-r--r-- 1 manish manish 18 Apr 25 05:24 t1.sh
+manish@MANISH:~/bsh$ pwd
+/home/manish/bsh
+manish@MANISH:~/bsh$ bash t1.sh
+hello world!
+manish@MANISH:~/bsh$ echo $SHELL
+/bin/bash
+manish@MANISH:~/bsh$ vim t1.sh
+manish@MANISH:~/bsh$ ./t1.sh
+-bash: ./t1.sh: Permission denied
+manish@MANISH:~/bsh$ ls -l
+total 8
+-rw-r--r-- 1 manish manish 30 Apr 25 05:34 t1.sh
+-rw-r--r-- 1 manish manish 12 Apr 25 05:21 t1.txt
+manish@MANISH:~/bsh$
+manish@MANISH:~/bsh$ chmod u+x t1.sh
+manish@MANISH:~/bsh$ ls -ltr
+total 8
+-rw-r--r-- 1 manish manish 12 Apr 25 05:21 t1.txt
+-rwxr--r-- 1 manish manish 30 Apr 25 05:34 t1.sh
+manish@MANISH:~/bsh$ ./t1.sh
+hello world!
+manish@MANISH:~/bsh$
