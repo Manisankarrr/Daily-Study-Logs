@@ -1,0 +1,13 @@
+manish@MANISH:~/bsh$ vim case.sh
+manish@MANISH:~/bsh$ ./case.sh manish
+-bash: ./case.sh: Permission denied
+manish@MANISH:~/bsh$ chmod u+x case.sh
+manish@MANISH:~/bsh$ ./case.sh manish
+Hello bro
+manish@MANISH:~/bsh$ ./case.sh help
+Enter the username
+manish@MANISH:~/bsh$ ./case.sh jjj
+Who the hell are you?
+manish@MANISH:~/bsh$ ./case.sh administrator
+Hello bro
+manish@MANISH:~/bsh$
