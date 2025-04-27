@@ -1,0 +1,8 @@
+manish@MANISH:~/bsh$ LIST=(one two three four five)
+manish@MANISH:~/bsh$ echo $LIST
+one
+manish@MANISH:~/bsh$ echo ${LIST[@]}
+one two three four five
+manish@MANISH:~/bsh$ echo ${LIST[1]}
+two
+
