@@ -1,0 +1,45 @@
+
+Input redirection
+PIPING
+Command one
+echo Hello there
+Pipe Symbol
+echo Hello there |
+Command two
+echo Hello there | grep there
+Send command output to other commands
+
+manish@MANISH:~/bsh$ ls -l /usr/bin | grep bash
+-rwxr-xr-x 1 root root     1446024 Mar 31  2024 bash
+-rwxr-xr-x 1 root root        6988 Mar 31  2024 bashbug
+-rwxr-xr-x 1 root root        4527 Apr 17  2023 dh_bash-completion
+lrwxrwxrwx 1 root root           4 Mar 31  2024 rbash -> bash
+
+
+Output redirection
+Symbols used
+• > symbol to write to a file
+• >> to append toa file
+Example use case
+• Logging to a logfile (for ex. using timestamps)
+• Dynamically creating (config) files
+3 echo Hello World! > hello. txt
+$ echo Hello world hello. txt
+
+manish@MANISH:~/bsh$ echo hello world > hello.txt
+manish@MANISH:~/bsh$ cat hello.txt
+hello world
+manish@MANISH:~/bsh$ echo good day nigga  > hello.txt
+manish@MANISH:~/bsh$ cat hello.txt
+good day nigga
+manish@MANISH:~/bsh$ rm hello.txt
+manish@MANISH:~/bsh$ echo hello.txt >> hello.txt
+manish@MANISH:~/bsh$ cat hello.txt
+hello.txt
+manish@MANISH:~/bsh$ echo hello world > hello.txt
+manish@MANISH:~/bsh$ cat hello.txt
+hello world
+manish@MANISH:~/bsh$ echo good day nigga >> hello.txt
+manish@MANISH:~/bsh$ cat hello.txt
+hello world
+good day nigga
