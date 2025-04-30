@@ -1,0 +1,33 @@
+manish@MANISH:~/bsh$ vim func.sh
+manish@MANISH:~/bsh$ chmod u+x func.sh
+manish@MANISH:~/bsh$ ./func.sh
+-----
+This machine has been up for 3 hours, 8 minutes
+It has been running since 2025-04-25 09:16:30
+-----
+manish@MANISH:~/bsh$
+
+
+manish@MANISH:~/bsh$ vim func.sh
+manish@MANISH:~/bsh$ ./func.sh
+beforce
+function
+-----
+This machine has been up for 3 hours, 13 minutes
+It has been running since 2025-04-25 09:16:04
+-----
+3 hours, 13 minutes
+2025-04-25 09:16:04
+manish@MANISH:~/bsh$ vim func.sh
+manish@MANISH:~/bsh$ ./func.sh
+beforce
+function
+-----
+This machine has been up for 3 hours, 15 minutes
+It has been running since 2025-04-25 09:15:54
+-----
+beforce
+function
+manish@MANISH:~/bsh$
+
+---### to avoid overwriting use local ###---
