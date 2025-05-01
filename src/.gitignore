@@ -1,5 +1,5 @@
-# Ignore all .exe files inside src/
-src/C/.exe
+# Ignore ALL .exe files inside ANY src subfolder
+src/**/*.exe
 
-# Ignore Python cache files
-src/*__pycache__/
+# Ignore Python cache files (recursively)
+**/__pycache__/
