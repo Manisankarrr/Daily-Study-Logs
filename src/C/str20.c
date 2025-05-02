@@ -16,7 +16,7 @@ int main(){
         printf("Not Anagram\n");
         return 0;
     }
-    int fre1[256] = {0}, fre2[256] = {0};
+    int fre1[26] = {0};
     for (int i = 0; i < n; i++)
     {
         s[i] = tolower(s[i]);
