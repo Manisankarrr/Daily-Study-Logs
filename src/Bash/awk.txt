@@ -1,0 +1,22 @@
+manish@MANISH:~/bsh$ awk '{print $1}' test.txt
+one
+manish@MANISH:~/bsh$ awk '{print $2}' test.txt
+two
+manish@MANISH:~/bsh$ cat test.txt
+one two three
+manish@MANISH:~/bsh$
+
+
+manish@MANISH:~/bsh$ vim csvtest.csv
+manish@MANISH:~/bsh$ awk -F, '{print $1}' csvtest.csv
+one
+manish@MANISH:~/bsh$ awk -F, '{print $2}' csvtest.csv
+two
+manish@MANISH:~/bsh$ cat csvtest.csv
+one,two,three
+manish@MANISH:~/bsh$ cat csvtest.csv
+one,two,three
+manish@MANISH:~/bsh$ echo "Just get this word: Hello" | awk '{print $5}'
+Hello
+manish@MANISH:~/bsh$ echo "Just get this word: Hello" | awk '{print $5}' | cut -c2
+e
