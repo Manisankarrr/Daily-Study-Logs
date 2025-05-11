@@ -1,0 +1,5 @@
+manish@MANISH:~/bsh$ vim posarg.sh
+manish@MANISH:~/bsh$ chmod u+x posarg.sh
+manish@MANISH:~/bsh$ ./posarg.sh mani sankar
+hello mani sankar
+manish@MANISH:~/bsh$
