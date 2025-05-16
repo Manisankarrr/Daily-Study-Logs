@@ -1,0 +1,11 @@
+manish@MANISH:~/bsh$ vim sedtest.txt
+manish@MANISH:~/bsh$ sed 's/manish/keerthu/g' sedtest.txt
+hii hello am keerthu.
+who are you?
+manish@MANISH:~/bsh$ cat sedtest.txt
+hii hello am manish.
+who are you?
+
+
+s -substitute
+g - mean globally
