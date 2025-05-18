@@ -1,0 +1,20 @@
+manish@MANISH:~/bsh$ wc -w hello.txt
+5 hello.txt
+manish@MANISH:~/bsh$ wc -w < hello.txt
+5
+manish@MANISH:~/bsh$ cat << EOF
+> I will
+> write some
+> text
+> EOF
+I will
+write some
+text
+manish@MANISH:~/bsh$ wc -w <<< "Hello name"
+2
+manish@MANISH:~/bsh$ [ 1 = 0 ]
+manish@MANISH:~/bsh$ echo $?
+1
+manish@MANISH:~/bsh$ [ 1 -eq 1 ]
+manish@MANISH:~/bsh$ echo $?
+0
