@@ -7,7 +7,7 @@ def twosum(nums, target):
         map[num1] = i
     return []
 
-nums = [2, 1, 5, 3]
-target = 3
+nums = [3, 2, 4]
+target = 6
 
 print(twosum(nums, target))
