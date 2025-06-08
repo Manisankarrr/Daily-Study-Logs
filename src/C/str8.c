@@ -27,10 +27,8 @@ int main()
             printf("%c occurs %d times\n", s[i], count);
             return 0;
             
-        }    
-        
-    }
-    
+        }        
+    }    
 }
 printf("Not found");
 }

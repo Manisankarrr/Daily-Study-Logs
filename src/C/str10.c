@@ -23,7 +23,6 @@ int main() {
             printf("%s",p[i]);
     }
     // char *word[50];
-
     // char *token = strtok(s, " ");
     // int count =0;
     // while(token != NULL){

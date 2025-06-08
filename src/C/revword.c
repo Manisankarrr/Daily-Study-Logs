@@ -22,4 +22,6 @@ int main()
     }
     r[k-1] = '\0'; // Null-terminate the reversed string
     printf("%s\n",r); // Print the reversed string
+
 }
+
