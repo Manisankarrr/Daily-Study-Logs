@@ -17,7 +17,7 @@ int main(){
     for(int i=0; i<n1; i++){
         s1[i] = tolower(s1[i]);
         s2[i] = tolower(s2[i]);
-        if(map1[s1[i]-'a']!=map2[s2[i]-'a'])
+        if(map1[s1[i]-'a']++ !=map2[s2[i]-'a'])
         {
             "Not isomorphic\n";
             return 0;

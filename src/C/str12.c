@@ -18,5 +18,5 @@ int main() {
             }
             printf("%c", s[i]);
         }
-    }    
+    }   
 }

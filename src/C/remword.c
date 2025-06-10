@@ -18,6 +18,6 @@ int main()
         }
         token = strtok(NULL, " "); // Get the next token
     }
-    r[strcspn(r,"\n")] = '\0'; // Remove the newline character if present
+    r[strlen(r)-1] = '\0'; // Remove the newline character if present
     printf("%s",r); // Print the result
 }

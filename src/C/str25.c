@@ -15,7 +15,8 @@ int main() {
         if(len > max)
         {
             max = len;
-        strcpy(maxi, token);        }
+        strcpy(maxi, token);
+        }
         if(len < min)
         {
             min = len;

@@ -20,11 +20,11 @@ int main(){
     for (int i = 0; i < n; i++)
     {
         s[i] = tolower(s[i]);
-        t[i] = tolower(t[i]);
         fre1[s[i]-'a']++; 
     }
     for(int i = 0; i < n; i++)
     {
+        t[i] = tolower(t[i]);
         fre1[t[i]-'a']--;
     }
     for(int i=0;i<n;i++)

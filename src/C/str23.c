@@ -18,7 +18,7 @@ int main()
         int i;
         for(i = 0; i < len; i++)
         {
-            reverse[k++] = token[len - i - 1];
+            reverse[k++] = token[len-i-1];
         }
         reverse[k++] = ' ';
 
@@ -28,6 +28,7 @@ int main()
     printf("Reversed string: %s\n", reverse);
 
     return 0;
+
     
 
 }

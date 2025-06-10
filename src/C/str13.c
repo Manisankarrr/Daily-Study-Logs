@@ -13,15 +13,15 @@ int main() {
     for (int i = 0; i < n; i++) {
         count = 1;
         if (s[i] != '\0') {
-            char current = tolower(s[i]); // Lowercase the current character
+            s[i] = tolower(s[i]); // Lowercase the current character
             for (int j = i + 1; j < n; j++) {
-                if (current == tolower(s[j])) { // Check for duplicates
+                if (s[i] == tolower(s[j])) { // Check for duplicates
                     count++;
                     s[j] = '\0'; // Mark as processed
                 }
             }
             if(count == 1) {
-                printf("%c",current); 
+                printf("%c",s[i]); 
             }
             
         }
