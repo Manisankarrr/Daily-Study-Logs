@@ -12,7 +12,7 @@ def equilibrium_point(arr):
 # Example usage
 if __name__ == "__main__":
     arr = [1, 3, 5, 2, 2]
-    result = equilibrium_point(arr)
+    result = equilibrium_poin(arr)
     if result != -1:
         print(f"Equilibrium point is at index: {result}")
     else:

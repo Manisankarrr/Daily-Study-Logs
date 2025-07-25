@@ -1,44 +1,54 @@
-class Node(object):
-    def __init__(self, data , next = None):
-        self.data = data
-        self.next = next
-    def get_next (self):
-        return self.next    
-    def set_next (self, next):
-        self.next = next
-    def get_data (self):
-        return self.data    
-    def set_data (self, data):
-        self.data = data
+class Node:
+    def __init__(self,new_data):
+        self.data = new_data
+        self.next = None
+    
+class LinkedList:
+    def __init__(self):
+        self.head = Node(0)
+        self.length = 0
 
-class LinkedList (object):
-    def __init__(self, r = None):
-        self.root = r
-        self.size = 0
-        super().__init__()
-    
-    def get_size (self):
-        return self.size
-    
-    def add (self, data):
-        new_node = Node(data, self.root)
-        self.root = new_node
-        self.size += 1
-    def remove (self, data):
-        this_node = self.root
-        prev_node = None
-        while this_node:
-            if this_node.get_data() == data:
-                if prev_node:
-                    prev_node.set_next(this_node.get_next())
-                else:
-                    self.root = this_node.get_next()
-                self.size -= 1
-                return True
+    def search(self, key):
+        curr = self.head.next
+        while curr:
+            if curr.next:                
+                print("cur node: ",curr.data)
+                print("Next node data:", curr.next.data)
             else:
-                prev_node = this_node
-                this_node = this_node.get_next()
-        return False
+                print("Next node: None")
 
+            if curr.data == key:
+                return True
+            curr = curr.next
+        return False
     
+    def insert(self,value):
+        a = Node(value)
+        curr = self.head
+        while curr.next:
+            curr = curr.next
+        curr.next = a
+        self.length += 1
+
+    def display(self):
+        curr = self.head.next  # skip dummy
+        while curr:
+            print(curr.data, end=" -> ")
+            curr = curr.next
+        print("None")
+
+
+
+ll = LinkedList()
+ll.insert(10)
+ll.insert(20)
+ll.insert(30)
+ll.display()
+print(ll.search(30)) # True
+#print(ll.search(40)) # False
+
+
+
+
+
 
