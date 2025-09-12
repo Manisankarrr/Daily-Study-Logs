@@ -9,7 +9,7 @@
 
 #int("pizza") #ValueError: invalid literal for int() with base 10: 'pizza'
 
-try:
+try: 
     num = int(input("Enter a number: "))
     print(1/num)
 except ZeroDivisionError:
