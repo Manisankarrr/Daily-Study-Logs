@@ -8,7 +8,6 @@
 #1 + "1" #TypeError: unsupported operand type(s) for +: 'int' and 'str
 
 #int("pizza") #ValueError: invalid literal for int() with base 10: 'pizza'
-
 try: 
     num = int(input("Enter a number: "))
     print(1/num)
